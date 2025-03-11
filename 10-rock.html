@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <link rel="stylesheet" href="10-rock.css">
+</head>
+
+
+<body>
+    <p class="para">ROCK PAPER SCISSOR</p>
+
+    <button class="move-button" onclick="playGame('rock')"> <img class="icon" src="images/rock-emoji.png" alt=""> </button>
+    <button class="move-button" onclick="playGame('paper')"> <img class="icon" src="images/paper-emoji.png" alt=""> </button>
+    <button class="move-button" onclick="playGame('scissors')"> <img class="icon" src="images/scissors-emoji.png" alt=""> </button>
+
+    <p class="js-result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score"></p>
+
+    <button class="js-reset-button" onclick=" score.wins = 0, score.loses = 0,  score.ties = 0 
+        localStorage.removeItem('score')
+        updateScore() ">
+        Reset Score
+    </button>
+
+
+    <script src="10-rock.js"> </script>
+</body>
+</html>
